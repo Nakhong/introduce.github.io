@@ -1,3 +1,4 @@
+// 이미지 랜덤.
 var photo = document.querySelector(".photo");
 const img1 = ["me1.jpg", "me2.jpg"];
 
@@ -8,3 +9,5 @@ const imgAll = document.createElement("img");
 imgAll.src = `./assets/${chosenImage}`;
 
 photo.appendChild(imgAll);
+
+//
