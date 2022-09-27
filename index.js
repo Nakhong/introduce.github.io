@@ -7,9 +7,10 @@ imgAll.setAttribute("src", `./assets/${chosenImage}`);
 photo.appendChild(imgAll);
 
 // 이미지 랜덤으로 마우스 오버 하면 달라지기.
+
 console.log(imgAll);
 setInterval(() => {
   chosenImage = img1[Math.floor(Math.random() * img1.length)];
   imgAll.setAttribute("src", `./assets/${chosenImage}`);
   console.log(chosenImage);
-}, 1000);
+}, 1500);
