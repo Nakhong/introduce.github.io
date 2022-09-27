@@ -39,8 +39,17 @@ main {
 }
 
 #profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 50px;
   margin-bottom: 20px;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .photo {
@@ -61,15 +70,20 @@ img:hover {
   transform: scale(1.2);
   transition: transform 1s;
 }
-
+.main_ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+}
 .main_article {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.ul {
+ul {
   padding: 0;
-  list-style: none;
+  list-style: circle;
 }
 
 .h2 {
@@ -79,4 +93,20 @@ img:hover {
 footer {
   padding: 40px;
   background-color: #d3d3d3;
+}
+
+section:last-child {
+  margin-left: 23px;
+}
+
+.a {
+  padding: 10px;
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  color: white;
 }
