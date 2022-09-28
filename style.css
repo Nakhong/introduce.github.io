@@ -110,3 +110,11 @@ section:last-child {
   border-radius: 50px;
   color: white;
 }
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
