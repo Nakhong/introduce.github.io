@@ -12,7 +12,6 @@ console.log(imgAll);
 setInterval(() => {
   chosenImage = img1[Math.floor(Math.random() * img1.length)];
   imgAll.setAttribute("src", `./assets/${chosenImage}`);
-  console.log(chosenImage);
 }, 1500);
 
 // 클릭하면 스무스 하게 내려가기
