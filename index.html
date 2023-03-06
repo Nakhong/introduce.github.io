@@ -1,74 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>자기소개 페이지</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./assets/assets_elice_rabbit.png">
-    
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+    <script defer src="kakaoMap.js"></script>
   </head>
   <body>
     <div id="container">
       <header>
         <nav>
           <ul>
-            <li><a class="menu-btn" href="#profile">프로필</a></li>
-            <li><a class="menu-btn" href="#detail">상세 내용</a></li>
+            <li><a id="home" href="./">홈</a></li>
+            <li><a id="photo">사진</a></li>
+            <li><a id="time">몇시에요</a></li>
           </ul>
         </nav>
       </header>
 
-      <main>
-        <h1 id="profile">[1반]홍화낙</h1>
-        <article>
-          <div  class="photo">
-          <!-- <img src="./assets/me1.jpg" /> -->
-        </div>
-        </article>
+      <main id="main">
+        <h1 id="profile">홍화낙</h1>
         <div class="main_">
-        <div class="main_article">
-          <section id="detail">
-            <h2 class="h2">인적사항</h2>
-            <ul class="ul">
-              <li>생년 월일 :1995.08.09</li>
-              <li>주소:경기도 성남시</li>
-              <li>연락처:ghdghkwo5@gmail.com</li>
-            </ul>
-          </section>
-          <section>
-            <h2 class="h2">학력사항</h2>
-            <ul>
-              <li>성남서중학교 | 성남</li>
-              <li>성일고등학교 | 성남</li>
-              <li>한국 폴리텍 | 성남 | Iot소프트웨어과</li>
-            </ul>
-          </section>
-          <section>
-            <h2 class="h2">경력사항</h3>
-            <ul>
-              <li>한국 폴리텍 소프트웨어동아리</li>
-              <li>학교 성적 장학금 수상</li>
-              <li>엘리스 SW트랙 수료</li>
-            </ul>
-          </section>
-          <section>
-            <h2 class="h2">보유 스킬</h3>
-            <ul>
-              <li><a href="https://developer.mozilla.org/ko/docs/Web/HTML">HTML</a></li>
-              <li><a href="https://developer.mozilla.org/ko/docs/Web/CSS">CSS</a></li>
-              <li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">JavaScript</a></li>
-            </ul>
-          </section>
+          <div class="main_article">
+            <section id="detail">
+              <h2 class="h2">인적사항</h2>
+              <ul class="ul">
+                <li>생년 월일 :1995.08.09</li>
+                <li>주소:경기도 성남시</li>
+                <li>연락처:ghdghkwo5@gmail.com</li>
+              </ul>
+            </section>
+            <section>
+              <h2 class="h2">학력사항</h2>
+              <ul>
+                <li>성남서중학교 | 성남</li>
+                <li>성일고등학교 | 성남</li>
+                <li>한국 폴리텍 | 성남 | Iot소프트웨어과</li>
+              </ul>
+            </section>
+            <section>
+              <h2 class="h2">경력사항</h2>
+              <ul>
+                <li>한국 폴리텍 소프트웨어동아리</li>
+                <li>학교 성적 장학금 수상</li>
+                <li>엘리스 SW트랙 수료</li>
+              </ul>
+            </section>
+            <section>
+              <h2 class="h2">보유 스킬</h2>
+              <ul>
+                <li>
+                  <a href="https://developer.mozilla.org/ko/docs/Web/HTML"
+                    >HTML</a
+                  >
+                </li>
+                <li>
+                  <a href="https://developer.mozilla.org/ko/docs/Web/CSS"
+                    >CSS</a
+                  >
+                </li>
+                <li>
+                  <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript"
+                    >JavaScript</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
-      </div>
+        <h1>내가 사는 곳</h1>
+        <div id="map" style="width: 600px; height: 600px">
+          <script
+            type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1f46d604348315fe88a68c103fc6fedc"
+          ></script>
+        </div>
       </main>
+
       <footer>
-        <p>Author by : 홍화낙<br>
-        Copyright ⓒ 2016 - 2022 elice. All rights reserved.</p>
+        <p>
+          Author by : 홍화낙<br />
+          Copyright ⓒ 2016 - 2022 Siemens. All rights reserved.
+        </p>
       </footer>
     </div>
-    <script src="index.js"></script>
   </body>
 </html>
+
+<!--  ajax를 이용해서 본문 내용만 바꾼다, 헤더에서 list a 태그로 변경후 누르면 가운대가 바뀜. -->

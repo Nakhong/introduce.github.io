@@ -3,11 +3,35 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: 60px;
   font-family: "Yeon Sung", cursive;
 }
 
+a {
+  list-style: none;
+  color: turquoise;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 50px;
+}
+
 header {
-  background-color: #808080;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 50px;
+  padding: 1rem;
+  color: white;
+  background: teal;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 10px;
 }
 
 nav ul {
@@ -36,6 +60,10 @@ nav ul li {
 
 main {
   margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #profile {
@@ -59,17 +87,19 @@ article {
 }
 
 img {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  border: teal 2px solid;
 }
 
-img:hover {
-  width: 400px;
-  height: 400px;
-  transform: scale(1.2);
-  transition: transform 1s;
+.image {
+  display: flex;
+  width: 600px;
 }
+
 .main_ {
   display: flex;
   align-items: center;
@@ -93,7 +123,8 @@ ul {
 
 footer {
   padding: 40px;
-  background-color: #d3d3d3;
+  background-color: teal;
+  text-align: center;
 }
 
 section:last-child {
