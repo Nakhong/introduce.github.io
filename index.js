@@ -16,23 +16,3 @@ $("#photo").click(function () {
     }
   });
 });
-
-//자기소개
-
-// $("#profiles").click(function () {
-//   $("#main").html("<h1>자기소개</h1>");
-//   $("#main").append("<div><ul></ul></div>");
-//   $("#main>div>ul").attr("class", "hi");
-
-//   let req = $.ajax({
-//     url: "db.json",
-//     dataType: "json",
-//   });
-
-//   req.done(function (data, status) {
-//     for (let i = 0; i < data.memo.length; i++) {
-//       let li = `<li>${data.memo[i].li}</li>`;
-//       $(".hi").append(li);
-//     }
-//   });
-// });

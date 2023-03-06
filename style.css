@@ -9,7 +9,7 @@ body {
 
 a {
   list-style: none;
-  color: white;
+  color: turquoise;
   cursor: pointer;
 }
 
@@ -96,7 +96,13 @@ img {
 
 .image {
   display: flex;
-  width: 600px;
+  width: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image > p {
+  width: 300px;
 }
 
 .main_ {
