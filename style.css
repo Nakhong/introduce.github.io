@@ -11,6 +11,7 @@ a {
   list-style: none;
   color: turquoise;
   cursor: pointer;
+  text-decoration: none;
 }
 
 h1 {
