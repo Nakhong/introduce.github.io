@@ -149,6 +149,12 @@ section:last-child {
   color: white;
 }
 
+.photo > img {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   main {
     display: flex;
