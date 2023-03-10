@@ -2,6 +2,7 @@ let a,
   b,
   c,
   d = 0;
+
 let ajax1 = $.ajax({
   url: "https://api.github.com/repos/nakhong/introduce.github.io/commits",
   dataType: "json",
@@ -22,22 +23,27 @@ let ajax4 = $.ajax({
   dataType: "json",
 });
 
-ajax1.done((data) => {
-  a = data.length;
+// ajax1.done((data) => {
+//   a = data.length;
+// });
+
+// ajax2.done((data) => {
+//   b = data.length;
+// });
+// ajax3.done((data) => {
+//   c = data.length;
+// });
+// ajax4.done((data) => {
+//   d = data.length;
+// });
+
+Promise.all([ajax1, ajax2, ajax3, ajax4]).then((res) => {
+  a = res[0].length;
+  b = res[1].length;
+  c = res[2].length;
+  d = res[3].length;
 });
 
-ajax2.done((data) => {
-  b = data.length;
-});
-ajax3.done((data) => {
-  c = data.length;
-});
-ajax4.done((data) => {
-  d = data.length;
-});
-
-google.charts.load("current", { packages: ["corechart"] });
-google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   let data = new google.visualization.DataTable();
   data.addColumn("string", "Commits");
@@ -58,3 +64,6 @@ function drawChart() {
   );
   chart.draw(data, options);
 }
+
+google.charts.load("current", { packages: ["corechart"] });
+google.charts.setOnLoadCallback(drawChart);
