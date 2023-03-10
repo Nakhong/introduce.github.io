@@ -23,20 +23,6 @@ let ajax4 = $.ajax({
   dataType: "json",
 });
 
-// ajax1.done((data) => {
-//   a = data.length;
-// });
-
-// ajax2.done((data) => {
-//   b = data.length;
-// });
-// ajax3.done((data) => {
-//   c = data.length;
-// });
-// ajax4.done((data) => {
-//   d = data.length;
-// });
-
 Promise.all([ajax1, ajax2, ajax3, ajax4]).then((res) => {
   a = res[0].length;
   b = res[1].length;
