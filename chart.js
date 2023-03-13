@@ -30,11 +30,11 @@ Promise.all([ajax1, ajax2, ajax3, ajax4]).then((res) => {
   d = res[3].length;
 });
 
-function drawChart() {
+async function drawChart() {
   let data = new google.visualization.DataTable();
   data.addColumn("string", "Commits");
   data.addColumn("number", "Count");
-  data.addRows([
+  await data.addRows([
     ["자기소개", a],
     ["게시판", b],
     ["투두리스트", c],
@@ -48,7 +48,7 @@ function drawChart() {
   let chart = new google.visualization.PieChart(
     document.getElementById("chart_div")
   );
-  chart.draw(data, options);
+  await chart.draw(data, options);
 }
 
 google.charts.load("current", { packages: ["corechart"] });
