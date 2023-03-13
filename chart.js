@@ -28,13 +28,15 @@ Promise.all([ajax1, ajax2, ajax3, ajax4]).then((res) => {
   b = res[1].length;
   c = res[2].length;
   d = res[3].length;
+  google.charts.load("current", { packages: ["corechart"] });
+  google.charts.setOnLoadCallback(drawChart);
 });
 
-async function drawChart() {
+function drawChart() {
   let data = new google.visualization.DataTable();
   data.addColumn("string", "Commits");
   data.addColumn("number", "Count");
-  await data.addRows([
+  data.addRows([
     ["자기소개", a],
     ["게시판", b],
     ["투두리스트", c],
@@ -48,8 +50,5 @@ async function drawChart() {
   let chart = new google.visualization.PieChart(
     document.getElementById("chart_div")
   );
-  await chart.draw(data, options);
+  chart.draw(data, options);
 }
-
-google.charts.load("current", { packages: ["corechart"] });
-google.charts.setOnLoadCallback(drawChart);
