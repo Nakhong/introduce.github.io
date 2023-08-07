@@ -1,0 +1,88 @@
+{
+  "Model": [
+    {
+      "type": "Parameter",
+      "uid": -1,
+      "props": {
+        "ModelParameter": {
+          "type": "STRING",
+          "hasLov": false,
+          "isArray": false,
+          "displayValue": "Width [mm]",
+          "uiValue": "Width",
+          "value": "Width",
+          "propertyName": "ModelParameter",
+          "propertyDisplayName": "ModelParameter",
+          "isEnabled": true
+        },
+        "Case1": {
+          "type": "INTEGER",
+          "hasLov": false,
+          "isArray": false,
+          "displayValue": 11,
+          "uiValue": 11,
+          "value": 11,
+          "propertyName": "Case1",
+          "propertyDisplayName": "Case1",
+          "isEnabled": true
+        }
+      }
+    },
+    {
+      "type": "Parameter",
+      "uid": -1,
+      "props": {
+        "ModelParameter": {
+          "type": "STRING",
+          "hasLov": false,
+          "isArray": false,
+          "displayValue": "Depth [mm]",
+          "uiValue": "Depth",
+          "value": "Depth",
+          "propertyName": "ModelParameter",
+          "propertyDisplayName": "ModelParameter",
+          "isEnabled": true
+        },
+        "Case1": {
+          "type": "INTEGER",
+          "hasLov": false,
+          "isArray": false,
+          "displayValue": 133,
+          "uiValue": 133,
+          "value": 133,
+          "propertyName": "Case1",
+          "propertyDisplayName": "Case1",
+          "isEnabled": true
+        }
+      }
+    },
+    {
+      "type": "Parameter",
+      "uid": -1,
+      "props": {
+        "ModelParameter": {
+          "type": "STRING",
+          "hasLov": false,
+          "isArray": false,
+          "displayValue": "Thickness [mm]",
+          "uiValue": "Thickness",
+          "value": "Thickness",
+          "propertyName": "ModelParameter",
+          "propertyDisplayName": "ModelParameter",
+          "isEnabled": true
+        },
+        "Case1": {
+          "type": "INTEGER",
+          "hasLov": false,
+          "isArray": false,
+          "displayValue": 453.4,
+          "uiValue": 453.4,
+          "value": 453.4,
+          "propertyName": "Case2",
+          "propertyDisplayName": "Case2",
+          "isEnabled": true
+        }
+      }
+    }
+  ]
+}
